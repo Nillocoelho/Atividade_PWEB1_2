@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nome da Disciplina:<input id="nomeDisciplina"><br>
+    Codigo:<input id="codigoDisciplina" type="number"><br>
+    <button onclick="disciplinaControlador.inserir()">Cadastrar Disciplina</button>
+
+    
+    <h1>Disciplina:</h1>
+    <dl id="listaDisciplinas">
+
+    </dl>
+
+    <h3>Para cadastrar alunos na disciplina</h3>
+    Nome do Aluno:<input id="nome"><br>
+    Nome da Disciplina:<input id="nomeDisciplina"><br>
+
+    <dl id="listaDiscAluno">
+
+    </dl>
+
+    <button onclick="location.href='index.html'">Para cadastrar um aluno Clique Aqui</button>
+
+
+    <script src="modelo/disciplina.js"></script>
+    <script src="repositorio/disciplina_repositorio.js"></script>
+    <script src="servico/disciplina.service.js"></script>
+    <script src="controlador/disciplina_controlador.js"></script>
+
+    <script src="modelo/aluno.js"></script>
+    <script src="repositorio/aluno_repositorio.js"></script>
+    <script src="servico/aluno_service.js"></script>
+    <script src="controlador/aluno_controlador.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
