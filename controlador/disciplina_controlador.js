@@ -50,7 +50,7 @@ class DisciplinaControlador{
             const listaAlunoDisciplinaElemento = document.querySelector("#listaDiscAluno");
             if (listaAlunoDisciplinaElemento) {
                 const alunoElemento = document.createElement("li");
-                alunoElemento.textContent = `Aluno: ${aluno.nome} (Matrícula: ${aluno.matricula})`;
+                alunoElemento.textContent = `Aluno: ${aluno.nome} (Disciplina: ${disciplina.nome})`;
                 listaAlunoDisciplinaElemento.appendChild(alunoElemento);
             }
         } catch (e) {
