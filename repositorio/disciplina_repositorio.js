@@ -4,6 +4,9 @@ class DisciplinaRepositorio{
     }
 
     inserir(disciplina){
+        if (!(disciplina instanceof Disciplina)) {
+            throw new Error("O objeto não é uma instância de Disciplina");
+        }
         this.disciplinas.push(disciplina);
     }
 
@@ -16,5 +19,9 @@ class DisciplinaRepositorio{
 
     listar() {
         return this.disciplinas;
+    }
+
+    pesquisarPorCodigo(codigo) {
+        return this.disciplinas.find(disciplina => disciplina.codigo === codigo);
     }
 }

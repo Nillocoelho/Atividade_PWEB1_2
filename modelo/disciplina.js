@@ -2,7 +2,7 @@ class Disciplina{
     constructor(nome, codigo){
         this._nome = nome;
         this._codigo = codigo;
-        this._aluno = []
+        this._alunos = []
     }
 
     get nome(){
@@ -22,6 +22,10 @@ class Disciplina{
     }
 
     addAlunos(aluno){
-        this._aluno.push(aluno);
+        this._alunos.push(aluno);
+    }
+    
+    get alunos() {
+        return this._alunos; 
     }
 }

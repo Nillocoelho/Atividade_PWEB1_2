@@ -10,7 +10,7 @@ class AlunoControlador {
         const matriculoElemento = document.querySelector("#matricula");
         let alunoInserido = null;
         try{
-            alunoInserido = this.servico.inserir(nomeElemento.value, Number(idadeElemento.value),
+        alunoInserido = this.servico.inserir(nomeElemento.value, Number(idadeElemento.value),
             matriculoElemento.value);
         }
         catch(e){
